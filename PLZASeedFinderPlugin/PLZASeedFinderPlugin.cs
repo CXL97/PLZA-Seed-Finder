@@ -103,8 +103,8 @@ public sealed class PLZASeedFinderPlugin : IPlugin
     {
         try
         {
-            using var form = new GUI.Gen9aSeedFinderForm(SaveFileEditor, PKMEditor);
-            form.ShowDialog();
+            var form = new GUI.Gen9aSeedFinderForm(SaveFileEditor, PKMEditor);
+            form.Show();
         }
         catch (Exception ex)
         {
